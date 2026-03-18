@@ -5,28 +5,28 @@ const Header = () => {
   const [btnNameReact, setBtnNameReact] = useState("Login");
   return (
     <header
-      className="flex items-center justify-between px-3 py-5 bg-[#1a1a1a]"
+      className="sticky top-0 z-50  flex items-center justify-between px-3 py-5 bg-[#1a1a1a]"
     >
         <div className="flex gap-1.5 items-center">
-            <img src="/logo1.PNG" alt="logo" className="ml-5 w-12 rounded-md" />
+            <img src="/logo1.PNGbackdrop-blur-md" alt="logo" className="mx-5 w-12 rounded-md" />
             <h2 className="text-white font-oxygen font-black text-3xl">newsprism</h2>
         </div>
         <div className="nav-items">
             <ul className="hidden font-semibold md:flex items-center space-x-8 text-[#ffffff]">
                 <li className="text-base cursor-pointer relative transition-colors duration-200 hover:text-blue-400">
-                    HOME
+                    <Link to="/">CURRENT AFFAIRS</Link>
                 </li>
                 <li className="text-base cursor-pointer relative transition-colors duration-200 hover:text-blue-400">
-                    TOPICS
+                    <Link to="/topics">TOPICS</Link>
                 </li>
                 <li className="text-base cursor-pointer relative transition-colors duration-200 hover:text-blue-400">
-                    TRENDS
-                </li>
-                <li className="text-base cursor-pointer relative transition-colors duration-200 hover:text-blue-400">
-                    SEARCH
+                    <Link to="/search">EXPLORE</Link>
                 </li>                    
                 <li className="text-base cursor-pointer relative transition-colors duration-200 hover:text-blue-400">
-                    SUBSCRIBE
+                    <Link to="/subscribe">DAILY DIGEST</Link>
+                </li>
+                <li className="text-base cursor-pointer relative transition-colors duration-200 hover:text-blue-400">
+                    <Link to="/dashboard">DASHBOARD</Link>
                 </li>
             </ul>
         </div>
