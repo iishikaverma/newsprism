@@ -1,13 +1,13 @@
-import Header from "./components/Header"
+
+import Body from "./pages/Body"
 
 function App() {
 
   return (
-    <div>
-      <Header />
-      <h1 className="text-3xl font-bold underline">Hello</h1>
+    <div> 
+      <Body/>
     </div>
   )
 }
 
-export default App
+export default App;
