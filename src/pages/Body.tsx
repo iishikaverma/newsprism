@@ -1,18 +1,37 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Browse from "./Browse";
-import Login from "./Login";
+import Home from "./Home";
+import Subscribe from "./Subscribe";
+import Search from "./Search";
+import Topics from "./Topics";
+import Trends from "./Trends";
+import Dashboard from "./Dashboard";
 
 const Body = () => {
     const appRouter = createBrowserRouter([
         {
             path: "/",
-            element: <Login/>
+            element: <Home/>
         },
         {
-            path: "/browse",
-            element: <Browse/>
+            path: "/subscribe",
+            element: <Subscribe/>
         },
-
+        {
+            path: "/search",
+            element: <Search/>
+        },
+        {
+            path: "/topics",
+            element: <Topics/>
+        },
+        {
+            path: "/trends",
+            element: <Trends/>
+        },
+        {
+            path: "/dashboard",
+            element: <Dashboard/>
+        },
     ]);
 
     return (
